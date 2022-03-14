@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsFirstApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+    <div class="navbar">
+      <%= link_to "Voir la page home", root_path %>
+      <%= link_to "Voir la page about", toto_path %>
+      <%= link_to "Voir la page contact", titi_path %>
+    </div>
+    <%= yield %>
+    <div>
+      Footer
+    </div>
+  </body>
+</html>

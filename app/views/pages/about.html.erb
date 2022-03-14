@@ -1,0 +1,22 @@
+<h1>Teachers</h1>
+
+<form action="<%= toto_path %>" method="get">
+  <input type="text" 
+         name="teacher" 
+         value="<%= params[:teacher] %>"
+         placeholder="Who are you looking for?">
+  <input type="submit">
+</form>
+
+<ul>
+  <% @teachers.each do |teacher| %>
+    <li>
+      <%= teacher %>
+    </li>
+  <% end %>
+</ul>
+
+<!-- 
+commentaire HTML
+-->
+<%#= Time.now %>
